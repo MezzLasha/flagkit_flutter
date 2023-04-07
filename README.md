@@ -10,7 +10,7 @@ Usage
 To use Flag Kit, simply add it to your project's `pubspec.yaml` file:
 
 
-    flag_kit: ^1.0.0
+    flag_kit: ^0.0.1
 
 Then, in your Dart code, import the `flag_kit` package:
 
@@ -18,7 +18,9 @@ Then, in your Dart code, import the `flag_kit` package:
 
 Finally, use the `Flag` widget to display a flag:
 
-    Flag('US')
+     Widget build(BuildContext context) {
+       return Flag.of('GE'); //in this case Georgian flag
+     }
 
 By default, the `Flag` widget will size itself to fit its parent widget. If you want to specify a size for the flag, you can do so using the `size` parameter:
 
@@ -30,6 +32,11 @@ Features
 
 *   Displays flags for all countries with a valid ISO 3166-1 alpha-2 code
 *   Simple and easy-to-use API
+
+Goals
+--------
+
+*   Option to have SVG Flags for perfect scaling
 
 Contributing
 ------------

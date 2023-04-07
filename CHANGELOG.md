@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+All 255 Flags available as PNG Images.

@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class Flag extends StatelessWidget {
@@ -16,7 +17,7 @@ class Flag extends StatelessWidget {
   ///     mainAxisAlignment: MainAxisAlignment.center,
   ///     children: [
   ///       Text('Hello from'),
-  ///       FlagKit.of('GE'),
+  ///       Flag.of('GE'),
   ///     ],
   ///   );
   /// }
@@ -44,7 +45,7 @@ class Flag extends StatelessWidget {
   ///     mainAxisAlignment: MainAxisAlignment.center,
   ///     children: [
   ///       Text('Hello from'),
-  ///       FlagKit('GE', size: 48),
+  ///       Flag('GE', size: 48),
   ///     ],
   ///   );
   /// }
@@ -77,7 +78,9 @@ class Flag extends StatelessWidget {
       errorBuilder: errorBuilder ??
           (context, error, stackTrace) {
             // error out
-            print('FlagKitError: loading flag for country: $country');
+            if (kDebugMode) {
+              print('FlagKitError: loading flag for country: $country');
+            }
 
             // If the flag does not exist, return the WW flag.
             return Image(
