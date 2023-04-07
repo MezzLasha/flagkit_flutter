@@ -10,11 +10,11 @@ Usage
 To use Flag Kit, simply add it to your project's `pubspec.yaml` file:
 
 
-    flag_kit: ^0.0.1
+    flagkit: ^0.0.1
 
-Then, in your Dart code, import the `flag_kit` package:
+Then, in your Dart code, import the `flagkit` package:
 
-    import 'package:flag_kit/flag_kit.dart';
+    import 'package:flagkit/flagkit.dart';
 
 Finally, use the `Flag` widget to display a flag:
 
