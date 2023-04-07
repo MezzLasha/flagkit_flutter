@@ -1,6 +1,6 @@
 name: flagkit
 description: FlagKit is a collection of all country flags for flutter for easier integration.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/MezzLasha/flagkit_flutter
 
 environment:

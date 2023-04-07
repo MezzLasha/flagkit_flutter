@@ -10,7 +10,7 @@ Usage
 To use Flag Kit, simply add it to your project's `pubspec.yaml` file:
 
 
-    flagkit: ^0.0.1
+    flagkit: ^0.0.2
 
 Then, in your Dart code, import the `flagkit` package:
 
