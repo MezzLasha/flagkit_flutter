@@ -2,7 +2,7 @@
 Flag Kit
 ========
 
-Flag Kit is a Flutter package that provides a simple way to display a flag for a specific country using its [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
+Flag Kit is a (Blazing Fast) Flutter package that provides a simple way to display a flag for a specific country using its [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
 
 Usage
 -----
