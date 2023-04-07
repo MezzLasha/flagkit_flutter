@@ -1,39 +1,44 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+Flag Kit
+========
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+Flag Kit is a Flutter package that provides a simple way to display a flag for a specific country using its [ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Usage
+-----
 
-## Features
+To use Flag Kit, simply add it to your project's `pubspec.yaml` file:
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
+    flag_kit: ^1.0.0
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Then, in your Dart code, import the `flag_kit` package:
 
-## Usage
+    import 'package:flag_kit/flag_kit.dart';
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Finally, use the `Flag` widget to display a flag:
 
-```dart
-const like = 'sample';
-```
+    Flag('US')
 
-## Additional information
+By default, the `Flag` widget will size itself to fit its parent widget. If you want to specify a size for the flag, you can do so using the `size` parameter:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
+    Flag('US', size: 48)
+
+Features
+--------
+
+*   Displays flags for all countries with a valid ISO 3166-1 alpha-2 code
+*   Simple and easy-to-use API
+
+Contributing
+------------
+Big Thanks to [FlagKit](https://github.com/madebybowtie/FlagKit).
+
+We welcome contributions to Flag Kit! To get started, please read our [contribution guidelines](CONTRIBUTING.md).
+
+License
+-------
+
+Flag Kit is released under the MIT License.
+
